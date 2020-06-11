@@ -1,0 +1,98 @@
+.user-menu {
+  display: flex;
+  align-items: flex-start;
+
+  &__icon {
+    display: inline-block;
+    margin-left: 30px;
+    padding: 0;
+    padding-right: 15px;
+    width: 32px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    background-image: url("../../img/icon-user.png");
+    background-repeat: no-repeat;
+
+    @media (max-width: 890px) {
+      margin-left: 15px;
+    }
+  }
+
+  &__list {
+    @include list-reset;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 88px;
+    right: 0;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    background-color: $bg-color;
+
+    & li {
+      min-width: 176px;
+      padding-left: 20px;
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:nth-child(1) a::before {
+        width: 13px;
+        height: 13px;
+        background-image: url("../../img/icon-globe-user.png");
+      }
+
+      &:nth-child(2) a::before {
+        width: 16px;
+        height: 15px;
+        background-image: url("../../img/icon-key.png");
+      }
+
+      &:nth-child(3) a::before {
+        width: 10px;
+        height: 13px;
+        background-image: url("../../img/icon-palm-user.png");
+      }
+
+      &:nth-child(4) a::before {
+        width: 17px;
+        height: 17px;
+        background-image: url("../../img/icon-hammer.png");
+      }
+    }
+
+    &.active {
+      top: 78px;
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.4s ease 0s;
+    }
+  }
+
+  &__link {
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    color: $white-color;
+    text-decoration: none;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+    }
+
+    &:hover,
+    &:focus {
+      color: $active-color;
+      transition: all 0.3s ease 0s;
+      outline: none;
+    }
+  }
+}

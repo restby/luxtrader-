@@ -1,0 +1,29 @@
+<svg
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="62px" height="43px">
+<defs>
+<filter id="Filter_0">
+    <feOffset in="SourceAlpha" dx="0" dy="1" />
+    <feGaussianBlur result="blurOut" stdDeviation="0" />
+    <feFlood flood-color="rgb(255, 241, 216)" result="floodOut" />
+    <feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" />
+    <feComposite operator="in" in="compOut" in2="SourceAlpha" />
+    <feComponentTransfer><feFuncA type="linear" slope="0.44"/></feComponentTransfer>
+    <feBlend mode="normal" in2="SourceGraphic" />
+</filter>
+<linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+  <stop offset="0%" stop-color="rgb(0,0,0)" stop-opacity="0.96" />
+  <stop offset="50%" stop-color="rgb(158,158,158)" stop-opacity="0.96" />
+  <stop offset="50%" stop-color="rgb(208,208,208)" stop-opacity="0.96" />
+  <stop offset="100%" stop-color="rgb(158,158,158)" stop-opacity="0.96" />
+</linearGradient>
+
+</defs>
+<g filter="url(#Filter_0)">
+<path fill-rule="evenodd"  fill="rgb(187, 156, 102)"
+ d="M53.819,27.784 C51.902,28.643 49.585,29.402 46.969,30.021 L46.833,7.796 C42.988,6.084 37.286,5.000 30.925,5.000 C24.559,5.000 18.858,6.084 15.013,7.796 L15.013,30.019 C12.403,29.400 10.094,28.640 8.181,27.784 L5.999,32.567 C12.281,35.350 21.119,36.988 30.998,37.000 C40.876,36.988 49.723,35.350 56.001,32.567 L53.819,27.784 Z"/>
+</g>
+<path fill="url(#PSgrad_0)"
+ d="M53.819,27.784 C51.902,28.643 49.585,29.402 46.969,30.021 L46.833,7.796 C42.988,6.084 37.286,5.000 30.925,5.000 C24.559,5.000 18.858,6.084 15.013,7.796 L15.013,30.019 C12.403,29.400 10.094,28.640 8.181,27.784 L5.999,32.567 C12.281,35.350 21.119,36.988 30.998,37.000 C40.876,36.988 49.723,35.350 56.001,32.567 L53.819,27.784 Z"/>
+</svg>
