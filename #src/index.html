@@ -10,7 +10,11 @@
   <!-- <meta name="robots" content="noindex, nofollow"> -->
 
   <!-- Fonts -->
-  <!-- <link rel="preload" href="fonts/Arial.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+  <link rel="preload" href="fonts/BravoRGRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ceremoniousone.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/pfdintextcondpro-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/pfdintextcondpro-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/PTSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.min.css">
@@ -37,7 +41,40 @@
     @@include('_header.html')
 
     <main class="main">
+      <section class="popular">
+        <div class="container">
+          <b class="section-title popular__title">Популярные</b>
+          <!-- /.section-title popular__title -->
+          <h2 class="section-lead popular__lead">лоты Под аукцион</h2>
+          <!-- /.section-lead popular__lead -->
+          <div class="popular__icons"></div>
+          <!-- /.popular__icons -->
+          <div class="popular__row">
+            <div class="popular__item">
+              <a href="" class="popular__item-img-link">
+                <img src="img/auction/1.jpg" alt="Arnold & Son Worldtimer discovery of antarctica">
+                <h3 class="popular__item-title">Arnold & Son Worldtimer discovery of antarctica</h3>
+                <!-- /.popular__item-title -->
+              </a>
+              <!-- /.popular__item-img-link -->
+              <div class="popular__item-data">
 
+              </div>
+              <!-- /.popular__item-data -->
+              <button class="popular__item-btn" type="button">ПОДНЯТЬ СТАВКУ</button>
+              <!-- /.popular__item-btn -->
+            </div>
+            <!-- /.popular__item -->
+            <div class="popular__item"></div>
+            <!-- /.popular__item -->
+            <div class="popular__item"></div>
+            <!-- /.popular__item -->
+          </div>
+          <!-- /.popular__row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.popular -->
     </main>
 
     @@include('_footer.html')
